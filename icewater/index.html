@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>ice water</title>
+  <style>
+    body {
+      background-image: url("water.png");
+      background-size: cover;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+    document.addEventListener("mousemove", function (event) {
+      var i = document.createElement("img");
+      i.src = "cube.png";
+      i.style.left = event.clientX.toString() + "px";
+      i.style.top = event.clientY.toString() + "px";
+      document.body.appendChild(i);
+      console.log("worter")
+    });
+  </script>
+</body>
+</html>
