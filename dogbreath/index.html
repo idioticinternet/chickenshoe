@@ -31,17 +31,15 @@
 
       v2.style.top = Math.random() * (window.outerHeight - 480) + "px"
       v2.style.left = Math.random() * (window.outerWidth - 640) + "px"
-
-      element.click()
     }
   </script>
 </head>
 <body>
   <h1 class="title">/DOG<br>BREATH</h1>
-  <video id="v1" width="640" height="360" oncanplay="initVideo(this)" autoplay loop>
+  <video id="v1" width="640" height="360" autoplay loop>
     <source src="teethbaby2.mp4" type="video/mp4">
   </video>
-  <video id="v2" width="640" height="360" oncanplay="initVideo(this)" autoplay loop>
+  <video id="v2" width="640" height="360" autoplay loop>
     <source src="teethbaby.mp4" type="video/mp4">
   </video>
 </body>
