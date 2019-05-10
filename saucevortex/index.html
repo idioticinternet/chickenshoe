@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>saucevortex</title>
+  <style>
+    body {
+      background-color: #000;
+      font-family: "Helvetica Neue", sans-serif;
+      overflow: hidden;
+      background: url("beef.jpg")
+    }
+    .title {
+      position: relative;
+      display: block;
+      color: #fff;
+      font-size: 6em;
+      z-index: 1;
+    }
+    img {
+      width: 100;
+      position: absolute;
+    }
+  </style>
+</head>
+<body onmousemove="vortex(event)">
+  <h1 class=title>/SAUCE<br>VORTEX</h1>
+  <script>
+    function vortex (event) {
+      var img = document.createElement("img")
+      img.src = "sauce.png"
+      document.body.appendChild(img)
+      img.style.left = event.clientX
+      img.style.top = event.clientY
+      var audio = new Audio('splat.m4a');
+      audio.play();
+    }
+  </script>
+</body>
+</html>
